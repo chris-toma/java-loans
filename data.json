@@ -1,0 +1,25 @@
+[
+  {"amount": "85","numberOfPeriods": 13,"dateStart": "01-04-2020"},
+  {"amount": "28.94","numberOfPeriods": 2,"dateStart": "01-04-2020"},
+  {"amount": "199.96","numberOfPeriods": 2,"dateStart": "01-04-2020"},
+  {"amount": "133.33","numberOfPeriods": 2,"dateStart": "01-04-2020"},
+  {"amount": "90.25","numberOfPeriods": 3,"dateStart": "01-04-2020"},
+  {"amount": "78.04","numberOfPeriods": 3,"dateStart": "01-04-2020"},
+  {"amount": "338.11","numberOfPeriods": 24,"dateStart": "01-04-2020"},
+  {"amount": "134.44","numberOfPeriods": 2,"dateStart": "01-04-2020"},
+  {"amount": "99.99","numberOfPeriods": 3,"dateStart": "01-04-2020"},
+  {"amount": "61.06","numberOfPeriods": 3,"dateStart": "01-04-2020"},
+  {"amount": "124.4","numberOfPeriods": 5,"dateStart": "01-04-2020"},
+  {"amount": "25.61","numberOfPeriods": 5,"dateStart": "01-04-2020"},
+  {"amount": "107.3","numberOfPeriods": 31,"dateStart": "01-04-2020"},
+  {"amount": "6.2","numberOfPeriods": 31,"dateStart": "01-04-2020"},
+  {"amount": "126.66","numberOfPeriods": 32,"dateStart": "01-04-2020"},
+  {"amount": "62.5","numberOfPeriods": 16,"dateStart": "01-04-2020"},
+  {"amount": "23.06","numberOfPeriods": 16,"dateStart": "01-04-2020"},
+  {"amount": "184.27","numberOfPeriods": 5,"dateStart": "01-04-2020"},
+  {"amount": "190.12","numberOfPeriods": 5,"dateStart": "01-04-2020"},
+  {"amount": "50.66","numberOfPeriods": 6,"dateStart": "01-04-2020"},
+  {"amount": "270","numberOfPeriods": 18,"dateStart": "01-06-2020"},
+  {"amount": "555","numberOfPeriods": 18,"dateStart": "01-07-2020"}
+
+]
