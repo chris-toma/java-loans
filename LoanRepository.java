@@ -2,28 +2,26 @@ package com.javatut;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.javatut.DateUtils;
-import com.javatut.Loan;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-import java.util.TimeZone;
+import java.util.*;
 
 public class LoanRepository {
+    //@todo use ini file
     static String URL = "/Users/cristian.toma1/IdeaProjects/javatut/src/com/javatut/data.json";
 
     /**
      * @param period iterable
+     * @return
      */
-    public static void processPeriod(int period) {
+    public static Map<Integer, String[]> processPeriod(int period) {
         JSONParser parser = new JSONParser();
         Object obj = new Object();
 
-        Calendar currentDate = new GregorianCalendar(2020, Calendar.MARCH, 30);
+        Calendar currentDate = new GregorianCalendar();
         currentDate.setTimeZone(TimeZone.getTimeZone("GMT"));
         // increment date by period
         currentDate.add(Calendar.MONTH, period);
@@ -59,11 +57,17 @@ public class LoanRepository {
             total += loan.getAmount();
         }
 
-        System.out.printf(
-                " %s -> %.1f \n ",
-                DateUtils.getDate(currentDate),
-                total
-        );
+        float finalTotal = total;
+        Map<Integer, String[]> ret = new HashMap<>();
+
+        ret.put(period, new String[]{DateUtils.getDate(currentDate), Float.toString(finalTotal)});
+        return ret;
+//        return "" + DateUtils.getDate(currentDate) + ">>>>>>>" + total + "<br/>";
+//        System.out.printf(
+//                " %s >>>>> %.1f \n ",
+//                DateUtils.getDate(currentDate),
+//                total
+//        );
 
     }
 }
